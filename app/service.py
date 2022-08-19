@@ -7,12 +7,6 @@ import copy
 import json
 from pyproj import Transformer
 
-trans = Transformer.from_crs( 
-    "epsg:4326",
-    "+proj=utm +zone=23 +ellps=WGS84",
-    always_xy=True,
-)
-
 def distance(a, b) -> float:
     """ Função para retornar a distância entre dois pontos.
 
@@ -24,6 +18,13 @@ def distance(a, b) -> float:
         float: Distância entre os dois pontos como parâmetro.
     """
     return abs(np.linalg.norm(a-b))
+
+trans = Transformer.from_crs( 
+    "epsg:4326",
+    "+proj=utm +zone=23 +ellps=WGS84",
+    always_xy=True,
+)
+
 
 app = Flask(__name__)
 CORS(app)
