@@ -1,2 +1,4 @@
 sphinx
 numpy
+requests
+sphinxcontrib-napoleon
