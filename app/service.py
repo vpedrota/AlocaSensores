@@ -13,7 +13,16 @@ trans = Transformer.from_crs(
     always_xy=True,
 )
 
-def distance(a, b):
+def distance(a, b) -> float:
+    """ Função para retornar a distância entre dois pontos.
+
+    Args:
+        a (list): lista com coordenadas que descreve um ponto.
+        b (list): lista com coordenadas que descreve um ponto.
+
+    Returns:
+        float: Distância entre os dois pontos como parâmetro.
+    """
     return abs(np.linalg.norm(a-b))
 
 app = Flask(__name__)
@@ -29,7 +38,6 @@ def post():
 
     P = json_data['features'][1]['properties']['equipamentos']
 
-    print("esse caralho eh este numero" + str(P))
     tam = json_data['features'][0]['properties']['points']
     tam2 = json_data['features'][1]['properties']['points']
 
