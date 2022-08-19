@@ -5,3 +5,4 @@ app
    :maxdepth: 4
 
    service
+   core_functions
