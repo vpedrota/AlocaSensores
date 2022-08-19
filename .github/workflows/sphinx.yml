@@ -1,12 +1,10 @@
 name: sphinx-build
-on:
-  [push]
+on: [push]
 
 jobs:
   build:
     name: Sphinx Pages
     runs-on: ubuntu-latest
-    if: github.event.workflow_run.conclusion == 'success' 
     steps:
       - uses: seanzhengw/sphinx-pages@master
         id: sphinx-pages
