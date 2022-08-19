@@ -1,3 +1,3 @@
 GitHub Pages of [vpedrota/AlocaSensores](https://github.com/vpedrota/AlocaSensores.git)
 ===
-Sphinx html documentation of [58609501](https://github.com/vpedrota/AlocaSensores/tree/5860950191a79e0af2ce73a4a6190dbde253772b)
+Sphinx html documentation of [9efc831b](https://github.com/vpedrota/AlocaSensores/tree/9efc831bff1c97da660910baaa1abbf59e9aeb8f)
