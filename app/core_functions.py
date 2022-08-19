@@ -26,7 +26,8 @@ def distance(a, b) -> float:
     ---------
 
     >>> distance([1. , 1.], [4.333332, 234])
-    """
+
+    """ 
     return abs(np.linalg.norm(a-b))
 
 def mclp(json_data) -> dict:
@@ -37,6 +38,12 @@ def mclp(json_data) -> dict:
 
     Returns:
         dict: Retorna um geoJSON com um grupo de pontos que representa onde deve ser alocado os recursos.
+
+
+    Exemplos
+    -----
+
+    algum exemplo
     """
 
     
