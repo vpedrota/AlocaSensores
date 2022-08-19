@@ -2,3 +2,5 @@ sphinx
 numpy
 requests
 sphinxcontrib-napoleon
+pulp
+pyproj
