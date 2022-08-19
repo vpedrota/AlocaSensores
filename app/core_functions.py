@@ -1,3 +1,4 @@
+from array import array
 import numpy as np
 from pulp import *
 import copy
@@ -15,8 +16,8 @@ def distance(a, b) -> float:
     """ Função para retornar a distância entre dois pontos.
 
     Args:
-        a (list): lista com coordenadas que descreve um ponto.
-        b (list): lista com coordenadas que descreve um ponto.
+        a (np.array): lista com coordenadas que descreve um ponto.
+        b (np.array): lista com coordenadas que descreve um ponto.
 
     Returns:
         float: Distância entre os dois pontos como parâmetro.
@@ -25,8 +26,8 @@ def distance(a, b) -> float:
     Exemplos:
     ---------
 
-    >>> distance([1. , 1.], [4.333332, 234])
-
+    >>> distance([1. , 1.], [4.333332, 24])
+    23.240290493499085
     """ 
     return abs(np.linalg.norm(a-b))
 
@@ -43,10 +44,9 @@ def mclp(json_data) -> dict:
     Exemplos
     -----
 
-    algum exemplo
-    """
+    >>>
 
-    
+    """
 
     P = json_data['features'][1]['properties']['equipamentos']
 
