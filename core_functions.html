@@ -94,6 +94,36 @@
 </dl>
 </dd></dl>
 
+<dl class="py function">
+<dt class="sig sig-object py" id="core_functions.maketrans">
+<span class="sig-prename descclassname"><span class="pre">core_functions.</span></span><span class="sig-name descname"><span class="pre">maketrans</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core_functions.maketrans" title="Link permanente para esta definição"></a></dt>
+<dd><p>Return a translation table usable for str.translate().</p>
+<p>If there is only one argument, it must be a dictionary mapping Unicode
+ordinals (integers) or characters to Unicode ordinals, strings or None.
+Character keys will be then converted to ordinals.
+If there are two arguments, they must be strings of equal length, and
+in the resulting dictionary, each character in x will be mapped to the
+character at the same position in y. If there is a third argument, it
+must be a string, whose characters will be mapped to None in the result.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="core_functions.mclp">
+<span class="sig-prename descclassname"><span class="pre">core_functions.</span></span><span class="sig-name descname"><span class="pre">mclp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_data</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#core_functions.mclp" title="Link permanente para esta definição"></a></dt>
+<dd><p>Está função realiza o cálculo do modelo proposto.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros</dt>
+<dd class="field-odd"><p><strong>json_data</strong> (<em>dict</em>) – A entrada é um dicionário em python com os dados para o cálculo, a formatação segue a de um geoJSON.</p>
+</dd>
+<dt class="field-even">Retorna</dt>
+<dd class="field-even"><p>Retorna um geoJSON com um grupo de pontos que representa onde deve ser alocado os recursos.</p>
+</dd>
+<dt class="field-odd">Tipo de retorno</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 
 
